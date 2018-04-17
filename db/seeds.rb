@@ -10,3 +10,6 @@
 ].each do |x|
     Category.create(name: x[0])
 end
+
+user = User.create(email: "admin@in-datalab.com", password: "indatalab0707")
+user.add_role :admin
